@@ -286,14 +286,14 @@ ul {
 }
 
 .col-right-sponsored-context button {
-    width: 80px;
-    height: 30px;
+    height: 35px;
+    width: 60px;
     font-size: 13px;
-    color: teal;
+    color: #4c7afa;
     text-align: center;
     border-style: solid;
     border-radius: 3px;
-    border-color: lightblue;
+    border-color: #4c7afa;
     background: white;
     cursor: pointer;
 }
@@ -331,11 +331,11 @@ ul {
     width: 80px;
     height: 30px;
     font-size: 13px;
-    color: teal;
+    color: #4c7afa;
     text-align: center;
     border-style: solid;
     border-radius: 3px;
-    border-color: lightblue;
+    border-color: #4c7afa;
     background: white;
     cursor: pointer;
 }
