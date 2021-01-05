@@ -192,11 +192,11 @@ ul {
     margin-top: -15px;
     box-sizing: border-box;
     padding: 0 10px;
-    border: 1px solid #ccc;
+    border: 1px solid#4c7afa;
     border-radius: 5px;
     font-size: 14px;
     line-height: 30px;
-    color: #333;
+    color: black;
     text-decoration: none;
     transition: background ease-out 0.3s;
 }
@@ -289,7 +289,7 @@ ul {
     height: 35px;
     width: 60px;
     font-size: 13px;
-    color: #4c7afa;
+    color: black;
     text-align: center;
     border-style: solid;
     border-radius: 3px;
@@ -331,7 +331,7 @@ ul {
     width: 80px;
     height: 30px;
     font-size: 13px;
-    color: #4c7afa;
+    color: black;
     text-align: center;
     border-style: solid;
     border-radius: 3px;
