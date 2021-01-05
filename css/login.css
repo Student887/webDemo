@@ -178,3 +178,7 @@
         background: none;
         top: 22px;
     }
+    
+    #Regist {
+        display: none;
+    }
