@@ -61,7 +61,7 @@
             <div class="right-box" id="wrap">
                 <div class="logGet">
                     <div class="logD logDtip">
-                        <p class="p1">登录</p>
+                        <p class="p1" id="p1">登录</p>
                     </div>
                     <form name="Login">
                         <div class="logD">
@@ -72,31 +72,13 @@
                         </div>
                     </form>
                     <div class="logC">
-                        <input type="button" onclick="process()" value="登 录">
+                        <input type="button" onclick="process()" value="登 录" id="button1">
                     </div>
-                    <div class="logC">
-                        <input type="button" onclick="regist()" value="去 注 册">
+                    <div class="logC" id="regist">
+                        <input type="button" onclick="regist()" value="去 注 册" id="button2">
                     </div>
-                </div>
-            </div>
-            <div class="right-box" id="Regist">
-                <div class="logGet">
-                    <div class="logD logDtip">
-                        <p class="p1">注册</p>
-                    </div>
-                    <form name="Login">
-                        <div class="logD">
-                            <input type="text" name="reaccount" placeholder="输入用户名" />
-                        </div>
-                        <div class="logD">
-                            <input type="text" name="repassword" placeholder="输入用户密码" />
-                        </div>
-                    </form>
-                    <div class="logC">
-                        <input type="button" onclick="registsure()" value="注 册">
-                    </div>
-                    <div class="logC">
-                        <input type="button" onclick="cancel()" value="返 回">
+                    <div class="logC" id="cancel1">
+                        <input type="button" onclick="cancel()" value="返 回" id="button3">
                     </div>
                 </div>
             </div>

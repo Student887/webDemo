@@ -5,8 +5,8 @@ var users = [
 users.push(["www", "123456"]);
 /*登录*/
 function process() {
-    var un = document.getElementById("account").value;
-    var pwd = document.getElementById("password").value;
+    var un = Login.account.value;
+    var pwd = Login.password.value;
     if (un === "") {
         alert("用户名不能为空!");
         document.Login.account.focus();
@@ -34,27 +34,17 @@ function process() {
 }
 /*注册*/
 function regist() {
-    document.getElementById("Regist").style.display = "block";
-    document.getElementById("wrap").style.display = "none";
-}
-
-function registsure() {
-    var un = document.getElementById("reaccount").value;
-    var pwd = document.getElementById("repassword").value;
-    if (un === "") {
-        alert("用户名不能为空!");
-        document.Regist.account.focus();
-        return;
-    } else if (pwd === "") {
-        alert("密码不能为空!");
-        document.Regist.password.focus();
-        return;
-    }
+    document.getElementById("p1").innerHTML = "注册";
+    document.getElementById("button1").value = "注 册";
+    document.getElementById("regist").style.display = "none";
+    document.getElementById("cancel1").style.display = "block";
 }
 
 function cancel() {
-    document.getElementById("Regist").style.display = "none";
-    document.getElementById("wrap").style.display = "block";
+    document.getElementById("p1").innerHTML = "登录";
+    document.getElementById("button1").value = "登 录";
+    document.getElementById("regist").style.display = "block";
+    document.getElementById("cancel1").style.display = "none";
 }
 /*轮播图*/
 window.onload = function() {
