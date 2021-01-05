@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小屋</title>
+    <script src="../js/main.js"></script>
+    <link rel="stylesheet" href="../css/usally.css" type="text/css" />
+    <link rel="stylesheet" href="../css/main.css" type="text/css" />
+    <link rel="stylesheet" href="../css/Liststyle.css" type="text/css" />
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="window">
+        <div class="nav">
+            <div class="nav-left">
+                <ul class="nav-ul">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="main.html" class="view">冲浪</a></li>
+                    <li><a href="person.html">个人空间</a></li>
+                </ul>
+            </div>
+            <div class="nav-center">
+                <div class="nav-search">
+                    <form>
+                        <input type="text" class="nav-search-input" placeholder="查找自己感兴趣的">
+                        <button type="button" class="fa fa-search"></button>
+                    </form>
+                </div>
+            </div>
+            <div class="nav-right">
+                <ul class="nav-ul">
+                    <li class="user"><a href="login.html">登 录</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div class="bg-gray-100 dark:bg-gray-900 dark:text-white text-gray-600 h-screen flex overflow-hidden text-sm">
+                <div class="flex-grow overflow-hidden h-full flex flex-col">
+                    <div class="flex-grow flex overflow-x-hidden">
+                        <div class="xl:w-72 w-48 flex-shrink-0 border-r border-gray-200 dark:border-gray-800 h-full overflow-y-auto lg:block hidden p-5">
+                            <div class="text-xs text-gray-400 tracking-wider">好友/关注</div>
+                            <div class="space-y-4 mt-3">
+                                <button class="bg-white p-3 w-full flex flex-col rounded-md dark:bg-gray-800 shadow-lg relative ring-2 ring-blue-500 focus:outline-none">
+                                <div class="flex xl:flex-row flex-col items-center font-medium text-gray-900 dark:text-white pb-2 mb-2 xl:border-b border-gray-200 border-opacity-75 dark:border-gray-700 w-full">
+                                  <img src="../images/AoAo.jpg" class="w-7 h-7 mr-2 rounded-full" alt="profile" />
+                                  敖厂长
+                                </div>
+                                <div class="flex items-center w-full">
+                                  <div class="text-xs py-1 px-2 leading-none dark:bg-gray-900 bg-green-100 text-green-600 rounded-md">闲聊中</div>
+                                </div>
+                                <button class="bg-white p-3 w-full flex flex-col rounded-md dark:bg-gray-800 shadow">
+                                  <div class="flex xl:flex-row flex-col items-center font-medium text-gray-900 dark:text-white pb-2 mb-2 xl:border-b border-gray-200 border-opacity-75 dark:border-gray-700 w-full">
+                                   <img src="../images/t3.png" class="w-7 h-7 mr-2 rounded-full" alt="profile" />
+                                   why
+                                 </div>
+                                 <div class="flex items-center w-full">
+                                   <div class="text-xs py-1 px-2 leading-none dark:bg-gray-900 bg-blue-100 text-blue-500 rounded-md">在线</div>
+                                 </div>
+                               </button>
+                                </button>
+                                <button class="bg-white p-3 w-full flex flex-col rounded-md dark:bg-gray-800 shadow">
+                                <div class="flex xl:flex-row flex-col items-center font-medium text-gray-900 dark:text-white pb-2 mb-2 xl:border-b border-gray-200 border-opacity-75 dark:border-gray-700 w-full">
+                                <img src="../images/t2.png" class="w-7 h-7 mr-2 rounded-full" alt="profile" />
+                                    狗蛋
+                              </div>
+                                <div class="flex items-center w-full">
+                                   <div class="text-xs py-1 px-2 leading-none dark:bg-gray-900 bg-yellow-100 text-yellow-600 rounded-md">勿扰</div>
+                                 </div>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex-grow bg-white dark:bg-gray-900 overflow-y-auto">
+                            <div class="sm:px-7 sm:pt-7 px-4 pt-4 flex flex-col w-full border-b border-gray-200 bg-white dark:bg-gray-900 dark:text-white dark:border-gray-800 sticky top-0">
+                                <div class="flex w-full items-center">
+                                    <div class="flex items-center text-3xl text-gray-900 dark:text-white">
+                                        <img src="../images/AoAo.jpg" class="w-12 mr-4 rounded-full" alt="profile" /> 敖厂长
+                                    </div>
+                                    <div class="ml-auto sm:flex hidden items-center justify-end">
+                                        <div class="text-right">
+                                            <div class="text-xs text-gray-400 dark:text-gray-400">粉丝数</div>
+                                            <div class="text-gray-900 text-lg dark:text-white">736.3万</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-3 sm:mt-7 mt-4">
+                                    <a href="#" class="px-3 border-b-2 border-blue-500 text-blue-500 dark:text-white dark:border-white pb-1.5">投稿</a>
+                                    <a href="#" class="px-3 border-b-2 border-transparent text-gray-600 dark:text-gray-400 pb-1.5">动态</a>
+                                </div>
+                            </div>
+                            <div class="sm:p-7 p-4">
+                                <table class="w-full text-left">
+                                    <thead>
+                                        <tr class="text-gray-400">
+                                            <th class="font-normal px-3 pt-0 pb-3 border-b border-gray-200 dark:border-gray-800">视频类型</th>
+                                            <th class="font-normal px-3 pt-0 pb-3 border-b border-gray-200 dark:border-gray-800">视频名字</th>
+                                            <th class="font-normal px-3 pt-0 pb-3 border-b border-gray-200 dark:border-gray-800 hidden md:table-cell">视频时长</th>
+                                            <th class="font-normal px-3 pt-0 pb-3 border-b border-gray-200 dark:border-gray-800">播放量</th>
+                                            <th class="font-normal px-3 pt-0 pb-3 border-b border-gray-200 dark:border-gray-800 sm:text-gray-400 text-white">投稿时间</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="text-gray-600 dark:text-gray-100">
+                                        <tr>
+                                            <td class="sm:p-3 py-2 px-1 border-b border-gray-200 dark:border-gray-800">
+                                                <div class="flex items-center">
+                                                    游戏/解说
+                                                </div>
+                                            </td>
+                                            <td class="sm:p-3 py-2 px-1 border-b border-gray-200 dark:border-gray-800">
+                                                <div class="flex items-center">
+                                                    24年前超有趣的时间旅行游戏
+                                                </div>
+                                            </td>
+                                            <td class="sm:p-3 py-2 px-1 border-b border-gray-200 dark:border-gray-800 md:table-cell hidden">19:37</td>
+                                            <td class="sm:p-3 py-2 px-1 border-b border-gray-200 dark:border-gray-800 text-green-500">96.5w</td>
+                                            <td class="sm:p-3 py-2 px-1 border-b border-gray-200 dark:border-gray-800">
+                                                <div class="flex items-center">
+                                                    <div class="sm:flex hidden flex-col">
+                                                        2021-01-01
+                                                        <div class="text-gray-400 text-xs">11:16 AM</div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sm:p-3 py-2 px-1 border-b border-gray-200 dark:border-gray-800">
+                                                <div class="flex items-center">
+                                                    电影/吐槽
+                                                </div>
+                                            </td>
+                                            <td class="sm:p-3 py-2 px-1 border-b border-gray-200 dark:border-gray-800">
+                                                <div class="flex items-center">
+                                                    中国怪异电影 中年男子为当男主投资这部电影
+                                                </div>
+                                            </td>
+                                            <td class="sm:p-3 py-2 px-1 border-b border-gray-200 dark:border-gray-800 md:table-cell hidden">07:11</td>
+                                            <td class="sm:p-3 py-2 px-1 border-b border-gray-200 dark:border-gray-800 text-green-500">54.3w</td>
+                                            <td class="sm:p-3 py-2 px-1 border-b border-gray-200 dark:border-gray-800">
+                                                <div class="flex items-center">
+                                                    <div class="sm:flex hidden flex-col">
+                                                        2020-12-30
+                                                        <div class="text-gray-400 text-xs">07:16 AM</div>
+                                                    </div>
+
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sm:p-3 py-2 px-1 border-b border-gray-200 dark:border-gray-800">
+                                                <div class="flex items-center">
+                                                    美食/打破次元壁
+                                                </div>
+                                            </td>
+                                            <td class="sm:p-3 py-2 px-1 border-b border-gray-200 dark:border-gray-800">
+                                                <div class="flex items-center">
+                                                    被"人设"淹没的波罗的海鲱鱼罐头
+                                                </div>
+                                            </td>
+                                            <td class="sm:p-3 py-2 px-1 border-b border-gray-200 dark:border-gray-800 md:table-cell hidden">08:19</td>
+                                            <td class="sm:p-3 py-2 px-1 border-b border-gray-200 dark:border-gray-800 text-green-500">88.6w</td>
+                                            <td class="sm:p-3 py-2 px-1 border-b border-gray-200 dark:border-gray-800">
+                                                <div class="flex items-center">
+                                                    <div class="sm:flex hidden flex-col">
+                                                        2020-12-25
+                                                        <div class="text-gray-400 text-xs">11:03 AM</div>
+                                                    </div>
+
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sm:p-3 py-2 px-1 border-b border-gray-200 dark:border-gray-800">
+                                                <div class="flex items-center">
+                                                    游戏/恰饭
+                                                </div>
+                                            </td>
+                                            <td class="sm:p-3 py-2 px-1 border-b border-gray-200 dark:border-gray-800">
+                                                <div class="flex items-center">
+                                                    【敖厂长】国产山海经游戏竟能探索宇宙？
+                                                </div>
+                                            </td>
+                                            <td class="sm:p-3 py-2 px-1 border-b border-gray-200 dark:border-gray-800 md:table-cell hidden">11:27</td>
+                                            <td class="sm:p-3 py-2 px-1 border-b border-gray-200 dark:border-gray-800 text-green-500">155.8w</td>
+                                            <td class="sm:p-3 py-2 px-1 border-b border-gray-200 dark:border-gray-800">
+                                                <div class="flex items-center">
+                                                    <div class="sm:flex hidden flex-col">
+                                                        2020-12-23
+                                                        <div class="text-gray-400 text-xs">09:45 AM</div>
+                                                    </div>
+
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sm:p-3 py-2 px-1 border-b border-gray-200 dark:border-gray-800">
+                                                <div class="flex items-center">
+                                                    科普/游戏历史
+                                                </div>
+                                            </td>
+                                            <td class="sm:p-3 py-2 px-1 border-b border-gray-200 dark:border-gray-800">
+                                                <div class="flex items-center">
+                                                    中国最能抄的游戏硬件厂商
+                                                </div>
+                                            </td>
+                                            <td class="sm:p-3 py-2 px-1 border-b border-gray-200 dark:border-gray-800 md:table-cell hidden">09:02</td>
+                                            <td class="sm:p-3 py-2 px-1 border-b border-gray-200 dark:border-gray-800 text-green-500">159w</td>
+                                            <td class="sm:p-3 py-2 px-1 border-b border-gray-200 dark:border-gray-800">
+                                                <div class="flex items-center">
+                                                    <div class="sm:flex hidden flex-col">
+                                                        2020-12-18
+                                                        <div class="text-gray-400 text-xs">10:29 AM</div>
+                                                    </div>
+
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sm:p-3 py-2 px-1 border-b border-gray-200 dark:border-gray-800">
+                                                <div class="flex items-center">
+                                                    游戏/吐槽
+                                                </div>
+                                            </td>
+                                            <td class="sm:p-3 py-2 px-1 border-b border-gray-200 dark:border-gray-800">
+                                                <div class="flex items-center">
+                                                    垃圾生存游戏 每只恐龙身上都有BUG！
+                                                </div>
+                                            </td>
+                                            <td class="sm:p-3 py-2 px-1 border-b border-gray-200 dark:border-gray-800 md:table-cell hidden">08:37</td>
+                                            <td class="sm:p-3 py-2 px-1 border-b border-gray-200 dark:border-gray-800 text-green-500">120.7w</td>
+                                            <td class="sm:p-3 py-2 px-1 border-b border-gray-200 dark:border-gray-800">
+                                                <div class="flex items-center">
+                                                    <div class="sm:flex hidden flex-col">
+                                                        2020-12-11
+                                                        <div class="text-gray-400 text-xs">10:29 AM</div>
+                                                    </div>
+
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

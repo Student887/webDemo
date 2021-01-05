@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小屋</title>
+    <link rel="stylesheet" href="../css/usally.css" type="text/css" />
+    <link rel="stylesheet" href="../css/login.css" type="text/css" />
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="../js/login.js" type="text/javascript" language="javascript"></script>
+</head>
+
+<body>
+    <div class="window">
+        <div class="nav">
+            <div class="nav-left">
+                <ul class="nav-ul">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="main.html">冲浪</a></li>
+                    <li><a href="person.html">个人空间</a></li>
+                </ul>
+            </div>
+            <div class="nav-center">
+                <div class="nav-search">
+                    <form>
+                        <input type="text" class="nav-search-input" placeholder="查找自己感兴趣的">
+                        <button type="button" class="fa fa-search"></button>
+                    </form>
+                </div>
+            </div>
+            <div class="nav-right">
+                <ul class="nav-ul">
+                    <li class="user"><a href="login.html" class="view">登 录</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div class="left-box">
+                <div id="container">
+                    <div id="list" style="left: -900px;">
+                        <img src="../images/instagram_6.jpg" alt="">
+                        <img src="../images/iceland.jpg" alt="">
+                        <img src="../images/unsplash_2.jpg" alt="">
+                        <img src="../images/instagram_3.jpg" alt="">
+                        <img src="../images/instagram_5.jpg" alt="">
+                        <img src="../images/instagram_6.jpg" alt="">
+                        <img src="../images/iceland.jpg" alt="">
+                    </div>
+                    <div id="buttons">
+                        <span index="1" class="on"></span>
+                        <span index="2"></span>
+                        <span index="3"></span>
+                        <span index="4"></span>
+                        <span index="5"></span>
+                    </div>
+                    <em id="prev" class="arrow">&lt;</em>
+                    <em id="next" class="arrow">&gt;</em>
+                </div>
+            </div>
+            <div class="right-box" id="wrap">
+                <div class="logGet">
+                    <!-- 头部提示信息 -->
+                    <div class="logD logDtip">
+                        <p class="p1">登录</p>
+                    </div>
+                    <!-- 输入框 -->
+                    <form name="Login">
+                        <div class="logD">
+                            <input type="text" name="account" placeholder="输入用户名" />
+                        </div>
+                        <div class="logD">
+                            <input type="text" name="password" placeholder="输入用户密码" />
+                        </div>
+                    </form>
+                    <div class="logC">
+                        <input type="button" onclick="process()" value="登 录">
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
