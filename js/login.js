@@ -2,7 +2,6 @@ var users = [
     ["qwt", "123456"],
     ["why", "654321"]
 ];
-users.push(["www", "123456"]);
 /*登录*/
 function process() {
     var un = Login.account.value;
@@ -35,16 +34,46 @@ function process() {
 /*注册*/
 function regist() {
     document.getElementById("p1").innerHTML = "注册";
-    document.getElementById("button1").value = "注 册";
+    document.getElementById("account").placeholder = "创建一个用户";
+    document.getElementById("password").placeholder = "设置一个密码";
+    document.getElementById("button1").style.display = "none";
     document.getElementById("regist").style.display = "none";
-    document.getElementById("cancel1").style.display = "block";
+    document.getElementById("registsure").style.display = "block";
+    document.getElementById("cancel").style.display = "block";
+}
+
+function registsure() {
+    var un = Login.account.value;
+    var pwd = Login.password.value;
+    for (i = 0; i < users.length; i++) {
+        if (users[i][0] == un) {
+            alert("该用户名已被注册！");
+            return;
+        }
+    }
+    if (un === "") {
+        alert("用户名不能为空!");
+        document.Login.account.focus();
+        return;
+    } else if (pwd === "") {
+        alert("密码不能为空!");
+        document.Login.password.focus();
+        return;
+    } else {
+        users.push([un, pwd]);
+        alert("注册成功！");
+        cancel();
+    }
 }
 
 function cancel() {
     document.getElementById("p1").innerHTML = "登录";
-    document.getElementById("button1").value = "登 录";
+    document.getElementById("account").placeholder = "输入用户名";
+    document.getElementById("password").placeholder = "输入用户密码";
+    document.getElementById("button1").style.display = "block";
     document.getElementById("regist").style.display = "block";
-    document.getElementById("cancel1").style.display = "none";
+    document.getElementById("registsure").style.display = "none";
+    document.getElementById("cancel").style.display = "none";
 }
 /*轮播图*/
 window.onload = function() {
